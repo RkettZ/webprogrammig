@@ -10,13 +10,13 @@ exports.index = async (req, res, next) => {
 };
 
 //C-Create เพิ่มข้อมูล
-exports.insert = async (req,res,next) => {
-    
+exports.insert = async (req,res,next) => { 
     let data = new users({
-username: req.body.username,
-email: req.body.email
-    });
+    username: req.body.username,
+    email: req.body.email,
+    password: req.body.password
 
+    });
     data.save();
     res.status(200).json({
         message:"บันทึกข้อมูลเรียบร้อยแล้ว"
