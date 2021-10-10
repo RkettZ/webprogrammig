@@ -3,15 +3,15 @@ const Schema = mongoose.Schema;
 
 const schema = new Schema(
     {
-        customerID: String,
-        customerTitleName: String,
-        customerFirstName: String,
-        customerLastName: String,
-        customerAddress: String,
-        customerTel: String,
-        customerEmail: String,
-        customerUserName:String,
-        customerPassword: String
+        customersID: String,
+        customersTitleName: String,
+        customersFirstName: String,
+        customersLastName: String,
+        customersAddress: String,
+        customersTel: String,
+        customersEmail: String,
+        customersUserName:String,
+        customersPassword: String
     },
     {
         timestamps: true,

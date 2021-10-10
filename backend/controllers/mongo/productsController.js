@@ -1,5 +1,7 @@
 const products = require("../../models/mongo/products");
-const customers = require("../../models/mongo/products");
+//const customers = require("../../models/mongo/products");
+const bcrypt = require("bcryptjs");
+
 
 // R-Read อ่านข้อมูล
 exports.index = async (req, res, next) => {
