@@ -5,6 +5,6 @@ const controller = require("../../controllers/mongo/productsController");
 router.get("/Products", controller.index);
 router.post("/Products", controller.insert);
 router.put("/Products", controller.update);
-router.delete("/Products", controller.delete)
+router.delete("/Products", controller.delete);
 
 module.exports = router;

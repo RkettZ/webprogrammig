@@ -18,13 +18,12 @@ const productsRouter_mongo = require("./routes/mongo/Products");
 const app = express();
 app.use(cors());
 
-mongoose.connect("mongodb+srv://admin:admin@cluster0.yu9au.mongodb.net/rmutl?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://admin:0882145113za@cluster0.eab3s.mongodb.net/rmutl?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false
 });
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
